@@ -1,1 +1,0 @@
-# shashack.github.io
