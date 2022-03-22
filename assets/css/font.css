@@ -1,0 +1,19 @@
+/* fa-brands-400 */
+@font-face {
+    font-family: 'FaBrands';
+    font-style: normal;
+    font-weight: normal;
+    src: local(※),
+         url('../fonts/fa-brands-400.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         
+}
+  /* fa-solid-900 */
+@font-face {
+    font-family: 'FaSolid';
+    font-style: normal;
+    font-weight: normal;
+    src: local(※),
+         url('../fonts/fa-solid-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    
+}
+  
