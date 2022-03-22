@@ -27,7 +27,7 @@ header {
 .header_title {
     float: left;
     padding-left: 15px;
-    font-size: 1.75em;
+    font-size: 1.5em;
     height: 100%;
 }
 
@@ -36,7 +36,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     height: 100%;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .header_subtitle a{
@@ -61,6 +61,7 @@ header {
     margin-right: auto;
     clear: both;
     margin-top: 5em;
+    color: #494e52;
 }
 
 .profile {
@@ -87,7 +88,6 @@ header {
     margin-top: 0.5em;
     text-align: left;
     padding-left: 10px;
-    color: #494e52;
 }
 
 .profile_div{
@@ -110,3 +110,26 @@ header {
 }
 
 
+.profile_incon_ul{
+    padding: 0;
+    right: 0;
+    list-style-type:none;
+    margin-top: 20px;
+}
+
+.profile_incon_ul li{
+    text-align: left;
+    padding-left: 7px;
+    margin-top: 15px;
+}
+
+.profile_incon_ul a{
+    text-align: left;
+    color: #494e52;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+.profile_incon_ul i{
+    font-size: 20px;
+}
