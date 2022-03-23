@@ -85,9 +85,10 @@ header {
 }
 
 .profile div{
-    margin-top: 0.5em;
+    margin-top: 0.6em;
     text-align: left;
     padding-left: 10px;
+
 }
 
 .profile_div{
@@ -132,4 +133,18 @@ header {
 
 .profile_incon_ul i{
     font-size: 20px;
+}
+
+.body p, .body ul{
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.body ul{
+    font-size: 17px;
+}
+
+.body a:link, .body a:visited{
+    color: #0055AA;
+    text-decoration: none;
 }
