@@ -1,5 +1,7 @@
-html {
+html, body {
     font-family: "Avenir", "Roboto", sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -12,8 +14,20 @@ header {
     display: inline-block;
 }
 
-.outer_container{
+footer {
+    height: 40px;
+    position: relative;
     text-align: center;
+    color: #8a8c8f;
+    border-top: 1px solid #dee5e7;
+    background-color: #f2f2f2;
+    transform: translateY(-100%);
+    line-height: 40px;   
+}
+
+footer a:link, footer a:visited{
+    color: #0055AA;
+    text-decoration: none;
 }
 
 .header_container {
@@ -54,14 +68,16 @@ header {
     text-decoration: underline; 
 }
 
-
-.main {
-    max-width: 1100px;
+.outer_container{
+    text-align: center;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    clear: both;
-    margin-top: 5em;
+    min-height: 100%;
+    padding-bottom: 40px;
+    max-width: 1100px;
     color: #494e52;
+    margin-top: 5em;
 }
 
 .profile {
@@ -71,9 +87,10 @@ header {
 }
 
 
-.body {
-    float: right;
+.main_container {
+    float: left;
     width: 65%;
+    margin-left: 50px;
     padding-left: 50px;
     padding-right: 15px;
     text-align: left;
@@ -95,7 +112,7 @@ header {
     font-size: 0.85em;
 }
 
-.profile_div a:link, .profile_div a:visited{
+.profile_div a:link, .profile_div a:visited, .main_container a:link, .main_container a:visited{
     color: #0055AA;
     text-decoration: none;
 }
@@ -135,16 +152,44 @@ header {
     font-size: 20px;
 }
 
-.body p, .body ul{
+.main_container p, .main_container ul{
     font-size: 19px;
     line-height: 30px;
 }
 
-.body ul{
+.main_container .publication{
     font-size: 17px;
 }
 
-.body a:link, .body a:visited{
-    color: #0055AA;
-    text-decoration: none;
+.publication{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+.publication_container{
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+.publication_img{
+    float: left;
+    width: 20%;
+    padding: 0px;
+}
+
+
+.publication_img img{
+    image-rendering: -webkit-optimize-contrast;
+}
+
+
+.publication_text{
+    float: left;
+    text-align: left;
+    padding: 0px;
+    margin-left: 0px;
+    line-height: 23px;
 }
