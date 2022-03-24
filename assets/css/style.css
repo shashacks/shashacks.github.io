@@ -119,19 +119,15 @@ footer a:link, footer a:visited{
     }
 
     .publication_img{
+        max-width:100%;
+        max-height:100%;
+    }
+
+    .publication_img img{
         float: left;
         width: 15%;
         padding: 0px;
     }
-    
-    .publication_text{
-        float: left;
-        text-align: left;
-        padding: 0px;
-        margin-left: 0px;
-        line-height: 23px;
-    }
-
 }
 
 .header_container a:link, .header_container a:visited {
@@ -184,15 +180,6 @@ footer a:link, footer a:visited{
         margin: 0;
         list-style-type: none;
         margin-left: -20px;
-    }
-
-
-    .publication_text{
-        float: left;
-        text-align: left;
-        padding: 0px;
-        margin-left: 0px;
-        line-height: 23px;
     }
 
     .publication_img{
@@ -271,3 +258,11 @@ footer a:link, footer a:visited{
     image-rendering: -webkit-optimize-contrast;
 }
 
+.publication_text{
+    float: left;
+    text-align: left;
+    padding: 0px;
+    margin-left: 0px;
+    line-height: 23px;
+    width:80%;
+}
