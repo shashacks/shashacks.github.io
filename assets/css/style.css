@@ -96,6 +96,12 @@ footer a:link, footer a:visited{
         line-height: 2.0em;
     }
 
+    .main_container  h1{
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+
     .publication_text{
         float: left;
         text-align: left;
