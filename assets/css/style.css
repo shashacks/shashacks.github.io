@@ -81,7 +81,8 @@ footer a:link, footer a:visited{
 
     .profile_incon_div a{
         text-align: left;
-        color: #494e52;
+        /* color: #494e52; */
+        color: red;
         text-decoration: none;
         font-size: 14px;
         margin-right: 5px;
