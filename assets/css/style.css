@@ -1,10 +1,21 @@
-html, body {
+html {
     font-family: "Avenir", "Roboto", sans-serif;
     height: 100%;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir", "Roboto", sans-serif;
+    position: relative;
+    height: 100%;
+    min-height: 100%;
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scroll */
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
 header {
@@ -17,15 +28,31 @@ header {
     display: inline-block;
 }
 
+.outer_container{
+    text-align: center;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    padding-bottom: 40px;
+    max-width: 1100px;
+    color: #494e52;
+    margin-top: 5em;
+    overflow: hidden;
+}
+
 footer {
     height: 40px;
-    position: relative;
+    position : relative;
+    /* transform : translateY(-200%); */
+    width: 100%;
     text-align: center;
     color: #8a8c8f;
     border-top: 1px solid #dee5e7;
     background-color: #f2f2f2;
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
     line-height: 40px;   
+    bottom: 0;
 }
 
 footer a:link, footer a:visited{
@@ -56,7 +83,7 @@ footer a:link, footer a:visited{
 /* mobile */
 @media all and (max-width: 1200px) {
     .header_title {
-        font-size: 0.8em;
+        font-size: 1.2em;
     }
 
     .header_container {
@@ -66,7 +93,7 @@ footer a:link, footer a:visited{
     }
     
     .header_subtitle {
-        font-size: 0.75em;
+        font-size: 1.1em;
     }
 
     .profile_incon_div a{
@@ -268,18 +295,6 @@ footer a:link, footer a:visited{
     text-decoration: underline; 
 }
 
-.outer_container{
-    text-align: center;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100%;
-    padding-bottom: 40px;
-    max-width: 1100px;
-    color: #494e52;
-    margin-top: 5em;
-    overflow: hidden;
-}
 
 .profile_div{
     font-size: 0.85em;
