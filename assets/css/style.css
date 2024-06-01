@@ -172,17 +172,6 @@ footer a:link, footer a:visited{
 
 
 @media (min-width: 1201px) {
-    .main_container {
-        float: left;
-        width: 65%;
-        margin-left: 50px;
-        margin-bottom: 60px;
-        padding-left: 50px;
-        padding-right: 15px;
-        text-align: left;
-        border-left: inset;
-    }
-
     .header_title {
         font-size: 1.5em;
     }
@@ -208,6 +197,7 @@ footer a:link, footer a:visited{
         margin: 0;
         list-style-type: none;
         margin-left: -20px;
+        font-size: 17px;
     }
 
     .publication_img{
@@ -221,8 +211,16 @@ footer a:link, footer a:visited{
         font-size: 1.2em;
     }
 
-    .main_container .publication{
+    .main_container {
+        float: left;
+        width: 65%;
+        margin-left: 50px;
+        margin-bottom: 60px;
+        padding-left: 50px;
+        padding-right: 15px;
         font-size: 17px;
+        text-align: left;
+        border-left: inset;
     }
 
     .main_container p, .main_container ul{
@@ -279,11 +277,6 @@ footer a:link, footer a:visited{
     margin-top: 5em;
     overflow: hidden;
 }
-
-
-
-
-
 
 .profile_div{
     font-size: 0.85em;
