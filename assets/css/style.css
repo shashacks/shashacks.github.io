@@ -44,13 +44,11 @@ header {
 footer {
     height: 40px;
     position : relative;
-    /* transform : translateY(-200%); */
     width: 100%;
     text-align: center;
     color: #8a8c8f;
     border-top: 1px solid #dee5e7;
     background-color: #f2f2f2;
-    /* transform: translateY(-100%); */
     line-height: 40px;   
     bottom: 0;
 }
@@ -83,7 +81,7 @@ footer a:link, footer a:visited{
 /* mobile */
 @media all and (max-width: 1200px) {
     .header_title {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
 
     .header_container {
@@ -93,7 +91,7 @@ footer a:link, footer a:visited{
     }
     
     .header_subtitle {
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
 
     .profile_incon_div a{
