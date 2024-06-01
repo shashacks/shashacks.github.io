@@ -81,7 +81,7 @@ footer a:link, footer a:visited{
 /* mobile */
 @media all and (max-width: 1200px) {
     .header_title {
-        font-size: 1.0em;
+        font-size: 0.9em;
     }
 
     .header_container {
@@ -91,7 +91,7 @@ footer a:link, footer a:visited{
     }
     
     .header_subtitle {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .profile_incon_div a{
@@ -176,7 +176,7 @@ footer a:link, footer a:visited{
     }
 
     footer {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .profile_image {
