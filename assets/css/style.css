@@ -2,9 +2,6 @@ html, body {
     font-family: "Avenir", "Roboto", sans-serif;
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
 }
 
 header {
@@ -14,10 +11,7 @@ header {
     margin-right: auto;
     background-color: #003366;
     z-index: 2;
-    display: flex; /* Use flexbox for better layout control */
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px; /* Add padding for spacing */
+    display: inline-block;
 }
 
 footer {
@@ -27,34 +21,47 @@ footer {
     color: #8a8c8f;
     border-top: 1px solid #dee5e7;
     background-color: #f2f2f2;
-    line-height: 40px;
-    width: 100%; /* Ensure footer spans full width */
-    bottom: 0; /* Stick footer to the bottom */
-    left: 0; /* Stick footer to the left */
+    transform: translateY(-100%);
+    line-height: 40px;   
 }
 
-footer a:link, footer a:visited {
+footer a:link, footer a:visited{
     color: #0055AA;
     text-decoration: none;
 }
 
 .header_title {
+    float: left;
     padding-left: 15px;
+    height: 100%;
 }
 
 .header_subtitle {
-    display: flex;
-    gap: 20px; /* Adjust the gap between items */
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
 }
 
-/* Mobile */
+
+
+
+
+.profile_incon_div {
+    display:none;
+}
+/* mobile */
 @media all and (max-width: 767px) {
     .header_title {
         font-size: 0.8em;
     }
-
+    
     .header_subtitle {
         font-size: 0.75em;
+    }
+
+    .profile_incon_div a{
+        font-size: 0.5em;
     }
 
     .profile {
@@ -62,31 +69,36 @@ footer a:link, footer a:visited {
         width: 100%;
     }
 
-    .profile_incon_div a {
-        font-size: 0.5em;
+    .profile_incon_div a{
+        text-align: left;
+        color: #494e52;
+        text-decoration: none;
+        font-size: 14px;
+        margin-right: 5px;
     }
 
-    .main_container .publication {
+    .main_container .publication{
         font-size: 14px;
     }
 
-    .main_container p, .main_container ul {
+    .main_container p, .main_container ul{
         font-size: 15px;
         line-height: 2.0em;
     }
 
-    .main_container h1 {
+    .main_container  h1{
         font-size: 25px;
         line-height: 1.5em;
     }
 
-    .publication_text {
+
+    .publication_text{
         float: left;
         text-align: left;
         padding: 0px;
         margin-left: 15px;
         line-height: 23px;
-        width: 80%;
+        width:80%;
     }
 
     footer {
@@ -97,28 +109,26 @@ footer a:link, footer a:visited {
         max-width: 180px;
         border-radius: 30%;
     }
-
     .header_container {
+        margin-left: auto;
+        margin-right: auto;
         height: 100%;
         line-height: 60px;
     }
 
-    .header_subtitle a {
+    .header_subtitle a{
+        float: right;
         padding-left: 3px;
         padding-right: 3px;
     }
-
-    footer {
-        font-size: 10px;
-    }
 }
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1200px) {
+/* tablet */
+@media (min-width: 768px) and (max-width: 1200px){
     .header_title {
         font-size: 1.5em;
     }
-
+    
     .header_subtitle {
         font-size: 1.1em;
     }
@@ -128,7 +138,7 @@ footer a:link, footer a:visited {
         width: 100%;
     }
 
-    .profile_incon_div a {
+    .profile_incon_div a{
         text-align: left;
         color: #494e52;
         text-decoration: none;
@@ -136,46 +146,49 @@ footer a:link, footer a:visited {
         margin-right: 5px;
     }
 
-    .main_container .publication {
+    .main_container .publication{
         font-size: 17px;
     }
 
-    .main_container p, .main_container ul {
+    .main_container p, .main_container ul{
         font-size: 19px;
         line-height: 30px;
     }
 
-    .publication_text {
+    .publication_text{
         margin-left: 30px;
     }
 
-    .publication_text {
+    .publication_text{
         float: left;
         text-align: left;
         padding: 0px;
         margin-left: 20px;
         line-height: 23px;
-        width: 80%;
+        width:80%;
     }
 
     .profile_image {
         max-width: 200px;
         border-radius: 30%;
     }
-
+    
     .header_container {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 1100px;
         height: 100%;
         line-height: 60px;
     }
 
-    .header_subtitle a {
+    .header_subtitle a{
+        float: right;
         padding-left: 15px;
         padding-right: 15px;
     }
 }
 
-/* Tablet and mobile common */
+/* tablet and mobile common*/
 @media all and (max-width: 1200px) {
     .header_container {
         max-width: 100%;
@@ -184,11 +197,11 @@ footer a:link, footer a:visited {
     }
 
     .profile_incon_ul {
-        display: none;
+        display:none;
     }
 
     .profile_incon_div {
-        display: block;
+        display:block;
     }
 
     .profile div {
@@ -202,29 +215,34 @@ footer a:link, footer a:visited {
     .main_container {
         text-align: left;
         border-top: inset;
-        margin: 30px 30px 60px 30px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
-
-    .publication {
+    
+    .publication{
         padding: 0;
         margin: 0;
         list-style-type: none;
         margin-left: -15px;
     }
 
-    .publication_img {
-        max-width: 100%;
-        max-height: 100%;
+    .publication_img{
+        max-width:100%;
+        max-height:100%;
     }
 
-    .publication_img img {
+    .publication_img img{
         float: left;
         width: 15%;
         padding: 0px;
     }
+
+    
 }
 
-/* Laptop */
+/* laptop */
 @media (min-width: 1201px) {
     .main_container {
         float: left;
@@ -239,7 +257,7 @@ footer a:link, footer a:visited {
     .header_title {
         font-size: 1.5em;
     }
-
+    
     .header_subtitle {
         font-size: 1.1em;
     }
@@ -250,60 +268,62 @@ footer a:link, footer a:visited {
         width: 23%;
     }
 
-    .profile div {
+    .profile div{
         margin-top: 0.6em;
         text-align: left;
         padding-left: 10px;
     }
 
-    .publication {
+    .publication{
         padding: 0;
         margin: 0;
         list-style-type: none;
         margin-left: -20px;
     }
 
-    .publication_img {
+    .publication_img{
         float: left;
         width: 20%;
         padding: 0px;
     }
 
-    .profile_name {
+    .profile_name{
         font-weight: bold;
         font-size: 1.2em;
     }
 
-    .main_container .publication {
+    .main_container .publication{
         font-size: 17px;
     }
 
-    .main_container p, .main_container ul {
+    .main_container p, .main_container ul{
         font-size: 19px;
         line-height: 30px;
     }
 
-    .publication_text {
+    .publication_text{
         float: left;
         text-align: left;
         padding: 0px;
         margin-left: 0px;
         line-height: 23px;
-        width: 80%;
+        width:80%;
     }
 
     .profile_image {
         max-width: 200px;
         border-radius: 30%;
     }
-
     .header_container {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 1100px;
         height: 100%;
         line-height: 60px;
     }
 
-    .header_subtitle a {
+    .header_subtitle a{
+        float: right;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -315,67 +335,76 @@ footer a:link, footer a:visited {
 }
 
 .header_container a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
-.outer_container {
+.outer_container{
     text-align: center;
-    min-height: 100vh; /* Ensure it takes full viewport height */
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+    min-height: 100%;
     padding-bottom: 40px;
     max-width: 1100px;
     color: #494e52;
     margin-top: 5em;
 }
 
-.profile_div {
+
+
+
+
+
+.profile_div{
     font-size: 0.85em;
 }
 
-.profile_div a:link, .profile_div a:visited, .main_container a:link, .main_container a:visited {
+.profile_div a:link, .profile_div a:visited, .main_container a:link, .main_container a:visited{
     color: #0055AA;
     text-decoration: none;
 }
 
 .profile_div a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
-.profile_name {
+
+.profile_name{
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.profile_incon_ul {
+
+.profile_incon_ul{
     padding: 0;
-    list-style-type: none;
+    right: 0;
+    list-style-type:none;
     margin-top: 20px;
 }
 
-.profile_incon_ul li {
+.profile_incon_ul li{
     text-align: left;
     padding-left: 7px;
     margin-top: 15px;
 }
 
-.profile_incon_ul a {
+.profile_incon_ul a{
     text-align: left;
     color: #494e52;
     text-decoration: none;
     font-size: 0.75em;
 }
 
-.profile_incon_ul i {
+.profile_incon_ul i{
     font-size: 20px;
 }
 
-.publication_container {
+.publication_container{
     overflow: hidden;
     position: relative;
     margin-top: 50px;
 }
 
-.publication_img img {
+.publication_img img{
     image-rendering: -webkit-optimize-contrast;
 }
