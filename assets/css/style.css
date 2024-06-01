@@ -2,6 +2,7 @@ html, body {
     font-family: "Avenir", "Roboto", sans-serif;
     height: 100%;
     width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
