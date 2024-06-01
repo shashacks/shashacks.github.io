@@ -348,6 +348,7 @@ footer a:link, footer a:visited{
     max-width: 1100px;
     color: #494e52;
     margin-top: 5em;
+    overflow: hidden;
 }
 
 
