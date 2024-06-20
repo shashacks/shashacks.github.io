@@ -23,9 +23,10 @@ header {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #003366;
+    background-color: #FFFFFF;
     z-index: 2;
     display: inline-block;
+    border-bottom: 1.5px inset #ccc;
 }
 
 .outer_container{
@@ -130,7 +131,8 @@ footer a:link, footer a:visited{
     .main_container {
         font-size: 14px;
         text-align: left;
-        border-top: inset;
+        /* border-top: inset; */
+        /* border-top: 2px inset #494e52; */
         margin-top: 30px;
         margin-bottom: 60px;
         margin-left: 30px;
@@ -248,7 +250,8 @@ footer a:link, footer a:visited{
         padding-right: 15px;
         font-size: 17px;
         text-align: left;
-        border-left: inset;
+        /* border-left: 1.5px inset #494e52; */
+        
     }
 
     .main_container p, .main_container ul{
@@ -285,7 +288,7 @@ footer a:link, footer a:visited{
 } 
 
 .header_container a:link, .header_container a:visited {
-    color: #FFFFFF;
+    color: #494e52;
     text-decoration: none;
 }
 
