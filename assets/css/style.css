@@ -87,7 +87,7 @@ a:hover { text-decoration: underline; }
 .hero-text .hero-social {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 4px 18px;
   margin-bottom: 16px;
   font-size: 12.5px;
 }
@@ -140,7 +140,8 @@ a.title-link:hover { color: inherit; text-decoration: underline; }   /* 제목: 
 .pub-foot { color: #868e92; font-size: 12px; margin: 4px 0 0 3px; }   /* 작은 회색 각주 */
 
 /* ===== 모바일 대응 ===== */
-@media (max-width: 600px) {
+/* 760px 미만에서는 1단으로 전환 — 2단을 유지하면 오른쪽 칼럼이 400px 아래로 좁아짐 */
+@media (max-width: 760px) {
   .hero { flex-direction: column; align-items: center; }
   .hero-left { align-items: center; width: 180px; }
   .profile-meta { text-align: center; }
